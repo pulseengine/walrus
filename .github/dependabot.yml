@@ -1,0 +1,38 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    labels:
+      - dependencies
+  - package-ecosystem: cargo
+    directory: /
+    schedule:
+      interval: weekly
+    labels:
+      - dependencies
+  - package-ecosystem: cargo
+    directory: /fuzz
+    schedule:
+      interval: weekly
+    labels:
+      - dependencies
+  - package-ecosystem: cargo
+    directory: /crates/fuzz-utils
+    schedule:
+      interval: weekly
+    labels:
+      - dependencies
+  - package-ecosystem: cargo
+    directory: /crates/macro
+    schedule:
+      interval: weekly
+    labels:
+      - dependencies
+  - package-ecosystem: cargo
+    directory: /crates/tests-utils
+    schedule:
+      interval: weekly
+    labels:
+      - dependencies
